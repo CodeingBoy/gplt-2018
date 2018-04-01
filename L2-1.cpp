@@ -34,11 +34,6 @@ int main(){
             city_attcked[attack_city_id] = true;
         }
 
-        int ancestor[city_count + 1];
-        for(int i = 1;i < city_count + 1;i++){
-            ancestor[i] = i;
-        }
-
         bool result = true;
         for(int i = 0;i < road_count;i++){
             int road_src = start[i], road_dest = end[i];
